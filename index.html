@@ -2,18 +2,25 @@
 <head>
     <title>char-sortinator</title>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <style>
         body { padding-top:50px; }
+        form {
+            margin: 0 auto;
+            width: 400px;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1>res.sendFile() Works!</h1>
-        </div>
-    </div>
+    <form action="/my-handling-form-page" method="post">
+      <div>
+          <label for="string">Give me a string!</label>
+          <input type="text" id="string" name="input_string">
+      </div>
+      <div class="button">
+        <button type="submit">Send your message</button>
+      </div>
+    </form>
 
 </body>
 </html>
